@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {MainLayout} from "./components/MainLayout"
+import {Header} from "./components/Header"
+import {MainContent} from "./components/MainContent"
+import {MQTTTestContainer} from "./components/MQTTTestContainer"
+import {MQTTcard} from "./components/MQTTcard"
+import GlobalStyle from "./components/GlobalStyle"
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle/>
+      <MainLayout>
+        <Header>
+        </Header>
+        <MainContent>
+          <MQTTTestContainer>
+            <MQTTcard/>
+          </MQTTTestContainer>
+        </MainContent>
+      </MainLayout>
+    </>
   );
 }
 
-export default App;
+
