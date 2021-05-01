@@ -9,7 +9,7 @@ import {FormInputField} from "./FormInputField"
 import {useFormFields} from "../hooks/inputHooks"
 
 
-const host = 'mqtt://172.20.10.4'
+const host = 'wss://172.20.10.4'
 
 export const MQTTcard = () => {
   const [client, setClient] = useState(null);
