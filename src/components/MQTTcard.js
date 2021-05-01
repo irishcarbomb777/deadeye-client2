@@ -33,6 +33,7 @@ export const MQTTcard = () => {
     const options = {
       clientId: "mqttjs1",
       port: 9001,
+      useSSL: true,
       username: 'deadeye',
       password: 'deadeye',
     }
